@@ -17,3 +17,14 @@ Our method consists of 3 phases:
  
 ### Code Explanation
 
+Before running the codes, Training data should be located in the TRAIN_FLDR, each subject formatted as HDF5 as follows: 
+
+    TRAIN_FLDR
+        ├── 0001.h5
+        ├── 0002.h5
+        ├── 0003.h5
+        ├── ...
+        
+```
+python Train.py --data-path path_to_TRAIN_FLDR --exp-dir path_to_CKPT_FLDR --gpu 0 --
+```
